@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/css_test.css">
+		<style type="text/css">
+			#customers{
+				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				width: 30%;
+				/*border-collapse:collapse;*/
+				}
+			#customers td, #customers th{
+				font-size: 1em;
+				border: 1px solid #98bf21;
+				/*border-style: dotted;*/
+				/*border-style: ridge;*/
+				/*border-style: inset;*/
+				/*border-width: 5px;*/
+				border-style: outset;
+				padding: 3px 7px 2px 7px;
+			}
+			#customers th{
+				font-size: 1.1em;
+				text-align: left;
+				padding-top: 5px;
+				padding-bottom: 4px;
+				background-color: #A7C942;
+				color:#ffffff;
+			}
+			#customers tr.alt td{
+				color: #000000;
+				background-color: #EAF2D3;
+			}
+			/*内联样式表*/
+			li{
+				/*display: inline;*/
+			}
+			p:first-child{
+				color: blue;
+			}
+			/*p > i:first-child{
+				color: blue;
+			}*/
+			p:first-child i{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul style="list-style-image:url('images/sqpurple.gif');">
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Coca Cola</li>
+			</ul>
+		</div>
+		<div>
+			<table id="customers">
+				<tr>
+					<th>Company</th>
+					<th>Contact</th>
+					<th>Country</th>
+				</tr>				
+				<tr>
+					<td>Alfreds Futterkiste</td>
+					<td>Maria Anders</td>
+					<td>Germany</td>
+				</tr>
+				<tr class="alt">
+					<td>Ernst Handel</td>
+					<td>Roland Mendel</td>
+					<td>Austria</td>
+				</tr>
+				<tr>
+					<td>North/South</td>
+					<td>Simon Crowther</td>
+					<td>UK</td>
+				</tr>
+				<tr class="alt">
+					<td>Island Trading</td>
+					<td>Helen Bennett</td>
+					<td>UK</td>
+				</tr>
+				
+
+			</table>
+		</div>
+		<div>
+			<p>
+				I am a <i>strong</i> man.
+			</p>
+			<p>
+				I am a <i>strong</i> man.
+			</p>
+			<p>
+				I am <i>haha</i> man.
+			</p>
+		</div>
+		<div>
+			<p style="opacity:0.6">
+				<img src="images/bg_flower.gif">
+			</p>
+		</div>
+	</body>
+</html>

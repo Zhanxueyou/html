@@ -1,0 +1,125 @@
+/*css test*/
+body{
+	/*color: #333;*/
+	background-color: #ddd;
+}
+/*去掉a链接中的下划线,下列四条规则,有特定的顺序
+a:link-正常，未访问过的链接;
+a:visited-用户访问过的链接;
+a:hover-当用户鼠标放在链接上时;
+a:active-链接被点击的那一刻;
+*/
+a:link {
+	color:#FF0000;
+    text-decoration: none;
+    background-color: #B2FF99;
+}
+a:visited {
+	color: #00FF00;
+    text-decoration: none;
+    background-color: #FFFF85;
+}
+a:hover {
+	color: #FF00FF;
+    text-decoration: underline;
+    background-color: #FF704D;
+}
+a:active {
+	color: #0000FF;
+    text-decoration: underline;
+    background-color: #FF704D;
+}
+
+div{
+	border: 1px solid black;
+	padding: 15px;
+
+}
+
+ul.a {list-style-type: circle;}
+
+
+#div1 input{
+	border:2px;
+	border-radius: 25px;
+	-moz-border-radius:25px; /* Old Firefox */
+	-o-border-radius:25px; /* Opera */
+	-ms-border-radius:25px; /* IE9 */
+	-webkit-border-radius:25px; /* Safari and Chrome */
+}
+
+#div1 button{
+	border:2px;
+	border-radius: 25px;
+	-moz-border-radius:25px; /* Old Firefox */
+	-o-border-radius:25px; /* Opera */
+	-ms-border-radius:25px; /* IE9 */
+	-webkit-border-radius:25px; /* Safari and Chrome */
+}
+
+#div1 a{
+	border:2px;
+	border-radius: 25px;
+	-moz-border-radius:25px; /* Old Firefox */
+	-o-border-radius:25px; /* Opera */
+	-ms-border-radius:25px; /* IE9 */
+	-webkit-border-radius:25px; /* Safari and Chrome */
+}
+
+#div2 button{
+	border: 2px;
+	box-shadow: 5px 5px 2px #888888; /* add a shadow*/
+}
+
+#bg_flower{
+	background:url(../images/bg_flower.gif);
+	-moz-background-size:63px 100px; /* Old Firefox*/
+	background-size: 63px 100px;
+	background-repeat: no-repeat;
+}
+
+#bg_flower1{
+	background:url(../images/bg_flower.gif);
+	-moz-background-size:40% 100%;
+	background-size:20% 100%;
+	background-repeat: no-repeat;
+	background-position: right top;
+	/*background-attachment: fixed;*/
+	background-origin: contents-box;
+	-webkit-background-origin:content-box;
+}
+
+p.test{
+	font-family: "Courier New";
+	width: 11em;
+	border: 1px solid #FFFFFF;
+	word-wrap: break-word;
+}
+
+@font-face
+{
+	font-family:myFirstFont;
+	src:url('./fonts/Sansation_Light.ttf');
+}
+
+#div1 p{
+	font-family: myFirstFont;
+	font-style: italic;
+}
+
+#para1{
+	/*text-align:center;*/
+	color:red;
+
+}
+
+p.center{text-align: center;}
+
+h1.hidden{
+	visibility: hidden;
+}
+h1.display{
+	display: none;
+}
+/*li{display: inline;}*/
+/*p{display: inline;}*/

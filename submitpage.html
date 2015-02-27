@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>submitpage</title>
+		<script type="text/javascript">
+			function displayDate(){
+				document.getElementById("timedemo").innerHTML=Date();
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			submit done.
+		</p>
+		<p id="timedemo">这是一个段落</p>
+		<button type="button" onclick="displayDate()">显示日期</button>
+		<p id="timedemo">这是另一个段落</p>
+		<input type="submit" onclick="displayDate()" value="显示日期" />
+		<script type="text/javascript">document.write("<h1>这是一个标题</h1>")</script>
+		<button type="button" onclick="alert('欢迎！')">点我</button>
+		<p id="demo">JavaScript 能改变HTML元素的内容。</p>
+		<script type="text/javascript">
+				function myFunction(){
+					x=document.getElementById("demo");
+					x.innerHTML="Hello JavaScript!";
+				}
+		</script>
+		<button type="button" onclick="myFunction()">点击这里就可以改变html的内容</button>
+		<script type="text/javascript">
+		function changeImage()
+		{
+			element = document.getElementById("myimage")
+			if (element.src.match("bulbon"))
+			{
+				element.src="images/pic_bulboff.gif"
+			}
+			else
+			{
+				element.src="images/pic_bulbon.gif"
+			}
+		}
+		function changeStyle()
+		{
+			x=document.getElementById("demo")
+			x.style.color="#ff0000"
+		}
+		function assertNumber()
+		{
+			var x=document.getElementById("text")
+			if(x.value==""||isNaN(x.value))
+			{
+				alert("输入的内容不是数字")
+				// 如何设置清空内容框的内容
+				// x.setAttribute(textContent, '')
+
+			}
+			else{
+				alert("恭喜，输入的内容是数字")
+			}
+		}
+		</script>
+		<img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
+		
+		<p>
+			<button type="button" onclick="changeStyle()">点击这里改变html的样式</button>
+		</p>
+		<input id="text" type="text">
+		<button onclick="assertNumber()">验证输入内容是否是数字</button>
+		<script type="text/javascript">
+			a = 5
+			b = 6
+			c = a + b
+			console.log(c)
+
+		</script>
+		<script type="text/javascript">
+		//alert(Date())</script>
+		<p>为JSON字符串创建对象</p>
+		<p id = "JSONdemo"></p>
+		<script type="text/javascript">
+		var text = '{"employees":[{"firstname":"John","lastname":"Doe"},{"firstname":"Anna","lastname":"Smith"},{"firstname":"Peter","lastname":"Jones"}]}'
+
+		obj = JSON.parse(text);
+		document.getElementById("JSONdemo").innerHTML = obj.employees[1].firstname + " " + obj.employees[1].lastname;
+		</script>
+		<script type="text/javascript">document.write(Date());</script>
+	</body>
+</html>
